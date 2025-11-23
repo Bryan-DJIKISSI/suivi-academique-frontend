@@ -3,17 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
-import { ConnexionComponent } from './connexion/connexion.component';
+import { LoginModalComponent } from "./login-modal/login-modal.component";
 
 @Component({
   selector: 'app-root',
   imports: [
     HeaderComponent,
     FooterComponent,
-    ContentComponent,
     RouterOutlet,
-    ConnexionComponent
-  ],
+    LoginModalComponent,
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

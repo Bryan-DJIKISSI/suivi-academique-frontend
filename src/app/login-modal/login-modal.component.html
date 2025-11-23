@@ -8,17 +8,17 @@
       </div>
       <div class="modal-body">
         <div class="mb-3">
-          <label for="loginInput" class="form-label" (click)="fermer()">Login</label>
-          <input type="text" class="form-control" id="loginInput" [value]="login">
+          <label for="loginInput" class="form-label">Login</label>
+          <input type="text" class="form-control" id="loginInput" [value]="login" [(ngModel)]="login" name="login">
         </div>
         <div class="mb-3">
           <label for="passwordInput" class="form-label">Password</label>
-          <input type="password" class="form-control" id="passwordInput">
+          <input type="password" class="form-control" id="passwordInput" [(ngModel)]="password" name="password">
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn btn-success">Se connecter</button>
+        <button type="button" class="btn btn-success" (click)="seConnecter()">Se connecter</button>
       </div>
     </div>
   </div>
