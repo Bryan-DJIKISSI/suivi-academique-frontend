@@ -10,4 +10,7 @@ import { LoginModalComponent } from '../login-modal/login-modal.component';
 })
 export class HeaderComponent {
   username = "bryan"
+  recuperer($event:string){
+    console.log("Données recus du composant enfant header: "+$event);
+  }
 }

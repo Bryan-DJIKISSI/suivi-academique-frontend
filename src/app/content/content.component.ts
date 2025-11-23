@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { LoginModalComponent } from '../login-modal/login-modal.component';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-content',
-  imports: [LoginModalComponent, FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })

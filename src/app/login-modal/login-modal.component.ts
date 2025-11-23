@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 
 @Component({
   selector: 'app-login-modal',
@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class LoginModalComponent {
   @Input() login ?:string
+  @Output() sortie = new EventEmitter<string>();
+
+  fermer() {
+    this.sortie.emit("Données venant du composant enfant login ");
+  }
 }
